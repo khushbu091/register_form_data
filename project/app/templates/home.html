@@ -1,0 +1,19 @@
+{{key}}
+<form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+
+    Name: <input type="text" name="name" >
+    <br>
+    <br>
+
+    Email: <input type="email" name="email" >
+    <br>
+
+    <br>Password: <input type="password" name="password" >
+    <br>
+
+    <br>City: <input type="text" name="city" >
+    <br>
+    <br>
+ <input type="submit" name="Click">
+</form>
